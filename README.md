@@ -71,3 +71,13 @@ git clone https://github.com/matter-labs/tutorial-examples.git
 cd local-setup-testing
 yarn test
 ```
+
+
+
+## Notes:
+1. setup as offical doc
+2. 2. In order to user Makefile, install `web3` in the right path. "../web3"
+3. Export new port: ``
+
+## Rference
+https://era.zksync.io/docs/tools/testing/dockerized-testing.html

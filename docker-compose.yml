@@ -13,6 +13,8 @@ services:
     image: "postgres:12"
     logging:
       driver: none 
+    ports:
+      - "5432:5432"
     volumes:
       - postgres:/var/lib/postgresql/data
     environment:
@@ -34,6 +36,7 @@ services:
       - zksync-data:/var/lib/zksync/data
     environment:
       - DATABASE_URL=postgres://postgres@postgres/zksync_local
+#      - DATABASE_URL=postgres://postgres@localhost/zksync_local
       - ETH_CLIENT_WEB3_URL=http://geth:8545
 
 volumes:

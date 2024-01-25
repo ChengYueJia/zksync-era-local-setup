@@ -5,10 +5,10 @@ help: ## Display this help screen
 
 
 query_l1: ## query from l1
-	@cd ../ && ./web3/web3 --rpc-url http://localhost:8545 balance  0x618263CE921F7dd5F4f40C29f6c524Aaf97b9bbd && cd local-setup
+	@cd ../ && ./web3/web3 --rpc-url http://localhost:8545 balance  0x618263CE921F7dd5F4f40C29f6c524Aaf97b9bbd && cd zksync-era-local-setup
 
 query_l2: ## query from l2
-	@cd ../ && ./web3/web3 --rpc-url http://localhost:3050 balance  0x618263CE921F7dd5F4f40C29f6c524Aaf97b9bbd && cd local-setup
+	@cd ../ && ./web3/web3 --rpc-url http://localhost:3050 balance  0x618263CE921F7dd5F4f40C29f6c524Aaf97b9bbd && cd zksync-era-local-setup
 
 
 fund: ## faught for l1: eth.sendTransaction({from: personal.listAccounts[0], to: "0xde03a0b5963f75f1c8485b355ff6d30f3093bde7", value: "7400000000000000000"})

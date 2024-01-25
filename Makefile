@@ -23,6 +23,6 @@ login_db: ## pswd: notsecurepassword
 
 
 login_geth: ## enter geth's docker bash
-	@docker container exec -it local-setup_geth_1  geth attach http://localhost:8545
+	@docker container exec -it zksync-era-local-setup_geth_1  geth attach http://localhost:8545
 
 .PHONY: clippy fmt test

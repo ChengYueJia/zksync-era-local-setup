@@ -18,7 +18,7 @@ transfer: ## transfer from l1->l2. Key in: Private key of the sender: 0x5090c024
 	@npx zksync-cli bridge deposit
 
 
-login_db: ## pswd: notsecurepassword
+login_db: ## pswd:
 	@psql -h localhost -U postgres
 
 
